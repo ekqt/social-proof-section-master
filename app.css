@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main:before, .main:after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  .main:before {
+    top: 0%;
+    left: 0%;
+    background:
+    top left/35% url(images/bg-pattern-top-desktop.svg) no-repeat;
+    z-index: -1;
+  }
+  
+  .main:after {
+    top: 00%;
+    left: 0%;
+    background:
+    bottom right/80% url(images/bg-pattern-bottom-desktop.svg) no-repeat;
+    z-index: -1;
+  }
+
+.container {
+    /* border: 0.1rem solid black; */
+    margin: 10vh 0 10vh;
+    width: 80%;
+}
+
+#top {
+    /* border: 0.1rem solid black; */
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #top {
+        flex-direction: column;
+    }
+}
+
+.hero {
+    /* border: 0.1rem solid black; */
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        width: 100%;
+    }
+}
+
+.title {
+    /* border: 0.1rem solid black; */
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    font-size: 300%;
+    padding: 0 20% 1% 0;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 200%;
+        padding: 0 0 1% 0;
+        text-align: center;
+    }
+}
+
+.description {
+    /* border: 0.1rem solid black; */
+    font-weight: 400;
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+    padding: 1% 20% 0 0;
+    line-height: 150%;
+}
+
+@media (max-width: 768px) {
+    .description {
+        font-size: 13px;
+        padding: 2% 0 0 0;
+        line-height: 180%;
+        text-align: center;
+    }
+}
+
+.ratings {
+    /* border: 0.1rem solid black; */
+    width: 50%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .ratings {
+        width: 100%;
+        margin-top: 6%;
+    }
+}
+
+.rating {
+    /* border: 0.1rem solid black; */
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    height: 24%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+}
+
+@media (max-width: 768px) {
+    .rating {
+        height: 30%;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 70%;
+        margin: 0 0 3%;
+    }
+}
+
+.ratingText {
+    padding: 0 6px 0 0;
+}
+
+@media (max-width: 768px) {
+    .ratingText {
+        padding: 10px 0 0;
+        text-align: center;
+    }
+}
+
+.stars {
+    margin: 0 40px 0%;
+}
+
+img {
+    margin: 0 2px 0;
+    transform: scale(100%, 100%);
+}
+
+@media (min-width: 769px) {
+    .rating:nth-of-type(1){
+        margin: 0 20% 3% 0;
+    }
+    
+    .rating:nth-of-type(2){
+        margin: 0 10% 3% 10%;
+    }
+    
+    .rating:nth-of-type(3){
+        margin: 0 0 0 20%;
+    }
+}
+
+#bottom {
+    /* border: 0.1rem solid black; */
+    display: flex;
+    padding: 4% 0 0;
+}
+
+@media (max-width: 768px) {
+    #bottom {
+        flex-direction: column;
+        padding: 4% 0 0;
+    }
+}
+
+.userEntry {
+    /* border: 0.1rem solid black; */
+    padding: 3% 3% 4%;
+    font-size: 13px;
+    line-height: 180%;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    height: 15%;
+    margin: 0 0 3%;
+}
+
+@media (max-width: 768px) {
+    .userEntry {
+        padding: 36px 24px 30px;
+    }
+}
+
+@media (min-width: 769px) {
+    .userEntry:nth-of-type(1) {
+        margin: 0 0 3%;
+    }
+    .userEntry:nth-of-type(2) {
+        margin: 1.5% 2% 1.5%;
+    }
+    .userEntry:nth-of-type(3) {
+        margin: 3% 0 0;
+    }
+}
+
+.user {
+    display: flex;
+}
+
+.imgUser {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.username {
+    /* border: 0.1rem solid black; */
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding-left: 15px;
+
+}
+
+.userStatus {
+    /* border: 0.1rem solid black; */
+    font-weight: 500;
+    padding-left: 15px;
+    color: hsla(333, 80%, 67%, 0.75);
+
+}
+
+.userComment {
+    /* border: 0.1rem solid black; */
+    margin: 0 0 0;
+    padding: 5% 0 0;
+    color: hsl(0, 0%, 100%);
+}
